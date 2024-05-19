@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>q3</title>
+</head>
+<body>
+
+<h1>Compare Two Numbers</h1>
+<form>
+  <label for="num1">Number 1:</label>
+  <input type="number" id="num1">
+  <br><br>
+  <label for="num2">Number 2:</label>
+  <input type="number" id="num2">
+  <br><br>
+  <button onclick="compareNumbers()">Compare</button>
+</form>
+
+  <script>
+    function compareNumbers() {
+      var number1 = parseFloat(document.getElementById('num1').value);
+      var number2 = parseFloat(document.getElementById('num2').value);
+
+      if (isNaN(number1) || isNaN(number2)) {
+        alert('Please enter valid numbers in both fields.');
+      } else {
+        if (number1 > number2) {
+          alert(number1 + ' is greater than ' + number2);
+        } else if (number2 > number1) {
+          alert(number2 + ' is greater than ' + number1);
+        } else {
+          alert('Both numbers are equal.');
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
