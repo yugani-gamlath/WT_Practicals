@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Question 06</title>
+</head>
+<body>
+
+<input id='1st' type='text' height='100px'/>
+
+<input type='button' onclick='btn1()' value='change color'/>
+
+<input id='2nd' type='text'/>
+
+<input id='3rd' type='text'/>
+
+<input type='button' onmouseover='changestyle2()' onmouseout='changestyle3()' value='Button 2'/>
+
+<script>
+function btn1(){
+	document.getElementById('1st').style.backgroundColor  = 'yellow';
+}
+function changestyle2(){
+	document.getElementById('2nd').style.fontFamily  = 'calibri';
+}
+function changestyle3(){
+	document.getElementById('3rd').style.fontFamily  = 'Impact';
+}
+</script>
+</body>
+</html>

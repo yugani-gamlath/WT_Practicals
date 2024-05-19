@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Question 01</title>
+</head>
+<body>
+
+<h2>Elements of the Array</h2>
+<p id="demo"></p>
+<h2>Length of the Array</h2>
+<p id="demo1"></p>
+<h2>First Element of the Array</h2>
+<p id="el1"></p>
+<h2>Second Element of the Array</h2>
+<p id="el2"></p>
+<h2>Last Element of the Array</h2>
+<p id="demo2"></p>
+<h2>New Elements of the Array</h2>
+<p id="demo3"></p>
+<h2>New Length of the Array</h2>
+<p id="demo4"></p>
+<h2>Last Element of the Array</h2>
+<p id="demo5"></p>
+<h2>Change Element of the Array</h2>
+<p id="demo6"></p>
+<h2>Delete Element of the Array</h2>
+<p id="demo7"></p>
+<h2>Sort Elements of the Array</h2>
+<p id="demo8"></p>
+
+<script>
+
+var vegetables = ["Carrot", "Beans", "Potato", "Pumpkin", "Cabbage"];
+document.getElementById("demo").innerHTML = vegetables;
+document.getElementById("demo1").innerHTML = vegetables.length;
+
+document.getElementById("el1").innerHTML = vegetables[0];
+document.getElementById("el2").innerHTML = vegetables[1];
+
+var last = vegetables[vegetables.length-1];
+document.getElementById("demo2").innerHTML = last;
+
+vegetables.push("Tomato");
+document.getElementById("demo3").innerHTML = vegetables;
+document.getElementById("demo4").innerHTML = vegetables.length;
+
+var last = vegetables[vegetables.length-1];
+document.getElementById("demo5").innerHTML = last;
+
+vegetables[3] = "Garlic";
+document.getElementById("demo6").innerHTML = vegetables;
+
+delete vegetables[3];
+document.getElementById("demo7").innerHTML = vegetables;
+
+var sort = vegetables.sort();
+document.getElementById("demo8").innerHTML = sort;
+
+</script>
+</body>
+</html>
