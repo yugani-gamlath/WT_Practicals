@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>Question 01</title>
+</head>
+<body bgcolor="green">
+    <img src="D:\ITUM_WEB\Practical 05\employee_icon.jfif" height=52 width=52>
+    <Font size="+3" color=red>Employee Registration Form</font>
+    <form method="POST" action="">
+        <br>
+        <table>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="initial" checked>Mr.
+                    <input type="radio" name="initial">Mrs.
+                    <input type="radio" name="initial">Ms.
+                </td>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="fn" placeholder="First Name"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="ln" placeholder="Last Name"></td>
+            </tr>
+            <tr>
+                <td>Email Address</td>
+                <td><input type="email" name="email" placeholder="Email Address"></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><input type="text" name="ct" placeholder="City"></td>
+            </tr>
+            <tr>
+                <td>Province</td>
+                <td><select name="province">
+                        <option value="Western">Western
+                        <option value="Sourthern">Sourthern
+                        <option value="Central">Central
+                        <option value="North Western">North Western
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Zip</td>
+                <td><input type="number" name="zp"></td>
+            </tr>
+            <tr>
+                <td>Upload Photo</td>
+                <td><input type="file" name="photo"></td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td><input type="tel" name="mob" placeholder="+94"></td>
+            </tr>
+            <tr>
+                <td>Languages known</td>
+                <td><input type="checkbox" name="lk" value="Sinhala" checked>Sinhala</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="lk" value="English">English</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="lk" value="Tamil">Tamil</td>
+            </tr>
+
+            <tr>
+                <td>Additional Information</td>
+                <td><textarea name="add" rows="3" cols="20" placeholder="Optional"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="submit">&nbsp;<input type="reset" value="reset"></td>
+        </table>
+    </form>
+</body>
+
+</html>
